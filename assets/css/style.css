@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --board-color: #ffffff;
+    --cell-border: #dee2e6;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #6610f2;
+    --secondary-color: #6f42c1;
+    --background-color: #343a40;
+    --text-color: #f8f9fa;
+    --board-color: #495057;
+    --cell-border: #6c757d;
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+    --primary-color: #17a2b8;
+    --secondary-color: #20c997;
+    --background-color: #e3f2fd;
+    --text-color: #0d47a1;
+    --board-color: #bbdefb;
+    --cell-border: #90caf9;
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+    --primary-color: #28a745;
+    --secondary-color: #20c997;
+    --background-color: #e8f5e9;
+    --text-color: #1b5e20;
+    --board-color: #c8e6c9;
+    --cell-border: #a5d6a7;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.game-container {
+    max-width: 333px;
+    margin: 0 auto;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--board-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: var(--board-color);
+    border: 2px solid var(--cell-border);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cell:hover {
+    background-color: var(--cell-border);
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .cell {
+        font-size: 2rem;
+    }
+}
+
+.winning-cell {
+    background-color: rgba(0, 255, 0, 0.3);
+    animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+header .d-flex {
+    margin-bottom: 0.5rem;
+}
+
+.reset-btn {
+    margin-left: 1rem;
+}
