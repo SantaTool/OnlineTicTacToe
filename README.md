@@ -19,9 +19,28 @@ Play the classic board game with a fresh design, sound effects, and multiple vis
 
 ---
 
-## 📂 Project Structure
+## 🚀 Getting Started (Local Development)
 
+1. **Clone this repo:**
+   ```bash
+   git clone https://github.com/SantaTool/tic-tac-toe.git
+   cd tic-tac-toe
+   ```
+2. Open index.html in your browser, or use a local development server like Live Server in VS Code.
 
+---
 
-## License
+##📄 License
 Please refer to the License section.
+
+---
+
+##🔗 Credits
+Created and maintained by Santa Debnath
+Built with 💻 HTML, CSS, and JavaScript
+
+---
+
+##📬 Feedback
+Got ideas or improvements?
+Email me at: 📧 kaus130dbn@gmail.com
