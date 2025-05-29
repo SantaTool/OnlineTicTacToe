@@ -26,7 +26,7 @@ Play the classic board game with a fresh design, sound effects, and multiple vis
    git clone https://github.com/SantaTool/tic-tac-toe.git
    cd tic-tac-toe
    ```
-2. Open index.html in your browser, or use a local development server like Live Server in VS Code.
+2. Open `index.html` in your browser, or use a local development server like Live Server in VS Code.
 
 ---
 
